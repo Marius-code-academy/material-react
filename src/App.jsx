@@ -13,7 +13,8 @@ function App() {
       <h1>labas</h1>
       <h2>{sayHello()}</h2>
       <img />
-      <Card />
+      <Card header={"this is a header from props"} body={1234} />
+      <Card header={"cia jau kitoks header"} body={"this is a body"} />
     </div>
   );
 }
