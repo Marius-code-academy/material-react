@@ -2,6 +2,7 @@ import "./App.css";
 import Button from "./components/Button/Button";
 import Card from "./components/Card/Card";
 import Container from "./components/Container/Container";
+import MapExample from "./components/MapExample/MapExample";
 import Something from "./components/Something/Something";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <h2>this is child 2</h2>
       </Container>
       <Card cardBody={"sdhfoaisudhf"} />
+      <MapExample />
     </div>
   );
 }
