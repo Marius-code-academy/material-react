@@ -1,0 +1,25 @@
+.header {
+  background-color: #d6d6d6;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  color: black;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
