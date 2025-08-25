@@ -22,12 +22,28 @@ function App() {
       .then((res) => setCharacters(res.data))
       .catch((err) => console.log(err));
   }, []);
+  // Sena sintakse
+  // const sortedCharacters = [...characters].sort((a, b) => a.name.localeCompare(b.name));
+  // Nauja sintakse
+  // const sortedCharacters1 = characters.toSorted((a, b) => a.name.localeCompare(b.name));
 
   const filteredCharacters = characters.filter((character) => character.name.toLowerCase().includes(searchInputValue.toLowerCase()));
+
+  function addCharacter() {
+    setCharacters((prev) => [
+      {
+        id: "lkasjdf",
+        name: "New character",
+        yearOfBirth: 2024,
+      },
+      ...prev,
+    ]);
+  }
 
   return (
     <div>
       <Header links={linksArray} />
+      <button onClick={addCharacter}>Add character</button>
       <input type="text" value={searchInputValue} onChange={(e) => setSearchInputValue(e.target.value)} />
       <Wrapper characters={filteredCharacters} />
     </div>
