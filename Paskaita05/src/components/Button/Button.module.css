@@ -1,0 +1,20 @@
+.buttonBase {
+  padding: 0.5rem;
+  border: 1px solid black;
+  font-weight: 600;
+}
+
+.primary {
+  background-color: blue;
+  color: white;
+}
+
+.secondary {
+  background-color: gray;
+  color: black;
+}
+
+.danger {
+  background-color: red;
+  color: white;
+}

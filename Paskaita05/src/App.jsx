@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Header from "./components/Header/Header";
+import Button from "./components/Button/Button";
 
 const API_HOST = import.meta.env.VITE_API_HOST;
 
@@ -43,6 +44,16 @@ function App() {
   return (
     <div>
       <Header links={linksArray} />
+      <Button
+        variant={"danger"}
+        disabled={true}
+        title="this is a title"
+        style={{
+          paddingBottom: "20px",
+        }}
+      >
+        Click me
+      </Button>
       <button onClick={addCharacter}>Add character</button>
       <input type="text" value={searchInputValue} onChange={(e) => setSearchInputValue(e.target.value)} />
       <Wrapper characters={filteredCharacters} />
